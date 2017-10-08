@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teamwork API</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="script" href="bower_components/bootstrap/dist/js/bootstrap.min.js">
+    <script src="js/Main.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<div style="margin: 10px">
+    <button class="btn btn-success" onclick="addTask()">Add task</button>
+
+    <h3>Статус запроса:</h3>
+    <p id="statusRequest" class="lead mb-4"></p>
+    <h3>Результат:</h3>
+    <p id="result" class="lead mb-4"></p>
+</div>
+<div id="list-todo" class="row" style="margin-left: 10px">
+
+</div>
+</body>
+<script>
+    Main();
+</script>
+</html>
