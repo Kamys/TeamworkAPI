@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Teamwork API</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="script" href="bower_components/bootstrap/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+
     <script src="js/Main.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
 </head>
 <body>
+<div class="loader" style= "display: none"></div>
 <div style="margin: 10px">
-    <button class="btn btn-success" onclick="addTask()">Add task</button>
+
+    <div id="btn-row" class="row" style="margin: 10px">
+    <button id="btnAddTask"
+            onclick="addTask()"
+            class="btn btn-success">Add task</button>
+    </div>
 
     <h3>Статус запроса:</h3>
     <p id="statusRequest" class="lead mb-4"></p>
