@@ -12,7 +12,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-    <script src="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"></script>
+    <script src="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css"></script>
 
 </head>
 <body>
@@ -54,19 +54,13 @@
                     <input type="text" class="form-control" id="usr">
                 </div>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="input-group date" data-provide="datepicker">
-                            <input type="text" class="form-control">
-                            <div class="input-group-addon">
-                                <span class="glyphicon glyphicon-th"></span>
-                            </div>
+                <div class="form-group">
+                    <label for="usr">Дата оканчания:</label>
+                    <div class="input-group date">
+                        <input type="text" class="form-control datepicker" value="12-10-2017">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
                         </div>
-                        <script type="text/javascript">
-                            $(function () {
-                                $('.datepicker').datepicker();
-                            });
-                        </script>
                     </div>
                 </div>
 
@@ -82,5 +76,6 @@
 </body>
 <script>
     Main();
+    $('.datepicker').datepicker();
 </script>
 </html>
