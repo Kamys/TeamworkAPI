@@ -20,7 +20,7 @@ function showTask() {
         $list.empty();
         listTodo.forEach(function (t, num) {
             var TodoContent = t.content;
-            $list.append('<p class="col-xs-12 col-md-3 col-lg-2">' + num + '. ' + TodoContent + '</p>');
+            $list.append('<p class="col-xs-5 col-md-3 col-lg-2">' + num + '. ' + TodoContent + '</p>');
         });
     });
 }
