@@ -6,13 +6,11 @@
     <title>Teamwork API</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-
+    
+    
     <script src="js/Main.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 
 </head>
 
@@ -49,24 +47,18 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="usr">Содержание:</label>
-                    <input type="text" class="form-control" id="usr">
+                    <label for="taskContent">Содержание:</label>
+                    <input id="taskDescription" type="text" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label for="usr">Дата оканчания:</label>
-                    <div class="input-group date">
-                        <input type="text" class="form-control datepicker" value="12-10-2017">
-                        <div class="input-group-addon">
-                            <span class="glyphicon glyphicon-th"></span>
-                        </div>
-                    </div>
+                    <label for="taskContent">Описание:</label>
+                    <input id="taskContent" type="text" class="form-control">
                 </div>
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                <button type="button" class="btn btn-success">Добавить</button>
+                <button type="button" class="btn btn-success" onclick="addTask();">Добавить</button>
             </div>
         </div>
 
